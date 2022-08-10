@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8cd7772a80.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="">
+    <title>Auto complete</title>
+    <style>
+        body{
+            background-color: rgb(48, 47, 47);
+        }
+        .container{
+            max-width: 600px;
+            margin-top: 50px;
+        }
+        .autoCompleteInput{
+            background-color: white;
+            width: 100%;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+        .resultContainer{
+            background-color: white;
+        }
+        .productItemContainer{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 50px;
+            padding: 0 10px;
+            justify-content: space-between;
+            border-bottom: 1px solid rgb(125, 124, 124);
+        }
+        .productName{
+            font-size: 14px;
+            width: 80%;
+        }
+        .imageTag{
+            height: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="email" class="form-control autoCompleteInput" placeholder="Search products...">
+        <div class="resultContainer"></div>
+    </div>
+    <script src="auto.js"></script>
+</body>
+</html>
